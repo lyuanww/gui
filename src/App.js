@@ -4,6 +4,7 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import './App.css';
 import Dashboard from './pages/Dashboard';
+import Forum from './pages/Forum'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Toolbar />
             <Routes>
             <Route path="/" element={<Dashboard />} />
+            <Route path="/forum" element={<Forum />} />
             </Routes>
           </Box>
       </Box>
