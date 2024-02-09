@@ -12,6 +12,8 @@ import levelOneFarm from "../images/level1farm.png";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import PropTypes from "prop-types";
+import Survey from "../components/Survey";
+import Journal from "../components/Journal";
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -65,7 +67,7 @@ export default function Profile() {
   };
 
   return (
-    <Box sx={{bgcolor:"green", flexDirection:"column", pb: 2}}>
+    <Box sx={{flexDirection:"column", pb: 2}}>
       <Grid
         container
         spacing={2}
@@ -73,9 +75,10 @@ export default function Profile() {
       >
         <Grid container sx={{ p: 3 }} xs={8}>
           <Stack spacing={3} flex="1 1 0">
-            <Card sx={{ p: 4 }}>
-              <CardHeader title="Profile" />
+            <Card sx={{ p: 4, border:"solid", backgroundColor:"#e4ebed"}}>
+              <Typography variant="h4" sx={{textAlign:"center", mb:2}}>Profile</Typography>
               <CardContent>
+                
                 <Box sx={{ display: "flex", columnGap: 2 }}>
                   <Typography
                     variant="h6"
@@ -121,22 +124,22 @@ export default function Profile() {
                     Start Date:
                   </Typography>
                   <Typography variant="h6" gutterBottom>
-                    2021-10-01
+                    10 January 2022
                   </Typography>
                 </Box>
               </CardContent>
             </Card>
-            <Card sx={{ p: 4 }}>
-              <CardHeader title="Your farm" />
+            <Card sx={{ p: 4, border:"solid", backgroundColor:"#e4ebed" }}>
+              <Typography variant="h4" sx={{textAlign:"center", mb:2}}>Your Farm</Typography>
               <CardMedia component="img" height="300" image={levelOneFarm} />
             </Card>
           </Stack>
         </Grid>
 
         <Grid container item xs={4}>
-          <Card>
-            <CardHeader title="Badges" />
+          <Card sx={{width:"100%", border:"solid", backgroundColor:"#e4ebed"}}>
             <CardContent>
+              <Typography variant="h4" sx={{textAlign:"center", mb:2}}>Achievements</Typography>
               <Grid container spacing={1}>
                 <Grid item xs={4}>
                   <Card>
@@ -209,26 +212,26 @@ export default function Profile() {
           </Card>
         </Grid>
       </Grid>
-      <Card sx={{ m:5, p: 3 }}>
+      <Card sx={{ m:5,border:"solid", backgroundColor:"#e4ebed" }}>
         <Box sx={{ m:5, borderBottom: 1, borderColor: "divider" }}>
           <Tabs
             value={value}
             onChange={handleChange}
             aria-label="basic tabs example"
           >
-            <Tab label="Item One" {...a11yProps(0)} />
-            <Tab label="Item Two" {...a11yProps(1)} />
-            <Tab label="Item Three" {...a11yProps(2)} />
+            <Tab label="Environment Journal" {...a11yProps(0)} />
+            <Tab label="Initial Survey" {...a11yProps(1)} />
+            <Tab label="Reflection Survey" {...a11yProps(2)} />
           </Tabs>
         </Box>
         <CustomTabPanel value={value} index={0}>
-          Item One
+          <Journal/>
         </CustomTabPanel>
         <CustomTabPanel value={value} index={1}>
-          Item Two
+          <Survey/>
         </CustomTabPanel>
         <CustomTabPanel value={value} index={2}>
-          Item Three
+          <Survey/>
         </CustomTabPanel>
       </Card>
     </Box>
