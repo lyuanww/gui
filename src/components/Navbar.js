@@ -30,7 +30,7 @@ export default function Navbar() {
         </Toolbar>
         <Toolbar styles={{backgroundColor:'#8ca8a0',}}>
           <Tabs centered variant="fullWidth">
-            <Link to="/" style={{ textDecoration: 'none', color: 'inherit', marginRight:'50px'}}>
+            <Link to="/volunteer" style={{ textDecoration: 'none', color: 'inherit', marginRight:'50px'}}>
               <Tab label="Volunteer Programme"/>
             </Link>
             <Link to="/forum" style={{ textDecoration: 'none', color: 'inherit', marginRight:'50px'}}>

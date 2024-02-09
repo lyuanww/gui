@@ -7,6 +7,7 @@ import './App.css';
 import Profile from './pages/Profile';
 import Forum from './pages/Forum'
 import AdminPage from './pages/Admin/AdminPage';
+import Volunteer from './pages/Volunteer';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
               <Route path="/" element={<Profile />} />
               <Route path="/forum" element={<Forum />} />
               <Route path="/adminPage" element={<AdminPage />} />
+              <Route path="/volunteer" element={<Volunteer />} />
               </Routes>
         </Box>
       </Box>
