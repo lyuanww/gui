@@ -53,8 +53,8 @@ const VolunteerOpps = ({ name, imageUrl }) => {
                 style={{backgroundColor: "#5f857a",}}
                 variant="contained"
               >Sign up</Button>
-                <Modal open={showSurveyModal} style={{display: "flex", justifyContent: "center"}}>
-                    <Box sx={{ p: 4, border:"solid", backgroundColor:"#e4ebed", alignItems: 'center',}}>
+                <Modal open={showSurveyModal} style={{display: "flex", justifyContent: "center", overflow: 'scroll'}}>
+                    <Box sx={{ p: 4, border:"solid", backgroundColor:"#e4ebed", alignItems: 'center', overflow: 'scroll'}}>
                         <Survey />
                         <Button onClick={() => {toggleModal()}} 
                         style={{backgroundColor: "#5f857a", marginLeft: 'auto', float: 'right'}}
