@@ -11,6 +11,7 @@ function RowComponent({name, link}) {
             variant="contained"
             onClick={() => {
                 alert('clicked');
+                
             }}
             style={{marginLeft: 'auto', backgroundColor: '#5f857a'}}
             
