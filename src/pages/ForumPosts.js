@@ -22,7 +22,7 @@ const handleLike = () => {
   return (
     <Card style={{ marginBottom: 16, width: 'calc(32% - 16px)', marginRight: 16, marginTop: 25, backgroundColor: '#e4ebed' }}>
         <div style={{ position: 'relative' }}>             
-        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', display: 'flex', alignItems: 'center', padding: '8px' }}>
+        <div style={{ position: 'absolute', width: '100%', display: 'flex', alignItems: 'center'}}>
         {/* User Avatar */}
         <div style={{ marginRight: 8 }}>
           <Avatar src={avatarUrl} alt={`Avatar`} />
@@ -30,26 +30,27 @@ const handleLike = () => {
 
         {/* User Name */}
         <div>
-          <Typography variant="h6" style={{ color: 'black' }}>{author}</Typography>
+          <Typography variant="h6" style={{ color: 'black' }}>
+            {author}
+          </Typography>
         </div>
       </div>
       <img src={logo} alt="GUI Logo" style={{ width: '100%', height: 'auto' }} />
     </div>
 
-      {/* Post Content */}
+
       <CardContent>
-        {/* Post Header */}
-        <div style={{ marginLeft: 16 }}>
+      <div style={{ display: 'flex', flexDirection: 'column' }}>
+        <div>
           <Typography variant="caption" color="textSecondary">
             {date}
           </Typography>
         </div>
 
-        {/* Post Body */}
         <Typography variant="body1" style={{ marginTop: 8, maxWidth: 300 }}>
           {content}
         </Typography>
-        <div style={{ display: 'flex', alignItems: 'center', marginTop: 8 }}>
+        <div style={{alignItems: 'center', marginTop: 8}}>
           <IconButton onClick={handleLike} color="primary">
              {isLiked ? <FavoriteIcon /> : <FavoriteBorderIcon />}
           </IconButton>
@@ -57,7 +58,9 @@ const handleLike = () => {
             {likes} Likes
           </Typography>
         </div>
+        </div>
       </CardContent>
+      
     </Card>
   );
 };
