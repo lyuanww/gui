@@ -4,7 +4,7 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Container from '@mui/material/Container';
 import './App.css';
-import Dashboard from './pages/Dashboard';
+import Profile from './pages/Profile';
 import Forum from './pages/Forum'
 import AdminPage from './pages/Admin/AdminPage';
 
@@ -12,15 +12,15 @@ function App() {
   return (
     <BrowserRouter>
       <Navbar />
-      <Container maxwidth="xl">
+      <Box sx={{p:4}} >
         <Box>
               <Routes>
-              <Route path="/" element={<Dashboard />} />
+              <Route path="/" element={<Profile />} />
               <Route path="/forum" element={<Forum />} />
               <Route path="/adminPage" element={<AdminPage />} />
               </Routes>
         </Box>
-      </Container>
+      </Box>
     </BrowserRouter>
   );
 }
