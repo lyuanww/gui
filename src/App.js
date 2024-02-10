@@ -13,7 +13,7 @@ function App() {
   return (
     <BrowserRouter>
       <Navbar />
-      <Box sx={{p:4}} >
+      <Box sx={{p:5}} >
         <Box>
               <Routes>
               <Route path="/" element={<Profile />} />

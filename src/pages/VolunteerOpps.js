@@ -20,6 +20,7 @@ const VolunteerOpps = ({ name, imageUrl }) => {
             borderRadius: '12px',
             boxShadow: 1,
             fontWeight: 'bold',
+            backgroundColor: '#e4ebed'
           }} 
           width={500}
           margin={5}

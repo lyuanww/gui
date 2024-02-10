@@ -26,7 +26,7 @@ export default function AdminPage() {
   ]
 
   return (
-    <div>
+    <Container maxwidth="xl">
           <div style={{ display: 'flex', alignItems: 'center', marginTop:'15px', marginBottom:'15px'}}>
             <Avatar
               alt={"Admin"}
@@ -57,7 +57,7 @@ export default function AdminPage() {
                 label="Survey Reports" />
             </Tabs>
             {value === 'userAcc' ? 
-              <Grid container alignItems="stretch" spacing={2} padding={2}>
+              <Grid container alignItems="stretch" spacing={2} padding={4}>
                 { usersList?.map((user) => 
                     <Grid key={user.userId} item xs={12}>
                         <RowComponent name={user.userName} link={user.userLink}/>
@@ -70,8 +70,7 @@ export default function AdminPage() {
               </Typography>
             }
           </Box>
-   
-    </div>
+    </Container>
   )
 }
 // <Divider style={{ margin: '20px 0 20px 0' }} />
