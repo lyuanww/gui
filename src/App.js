@@ -8,6 +8,7 @@ import Profile from './pages/Profile';
 import Forum from './pages/Forum'
 import AdminPage from './pages/Admin/AdminPage';
 import Volunteer from './pages/Volunteer';
+import IntermediateProfile from './pages/IntermediateProfile';
 
 function App() {
   return (
@@ -15,12 +16,13 @@ function App() {
       <Navbar />
       <Box sx={{p:5}} >
         <Box>
-              <Routes>
+            <Routes>
               <Route path="/" element={<Profile />} />
               <Route path="/forum" element={<Forum />} />
               <Route path="/adminPage" element={<AdminPage />} />
               <Route path="/volunteer" element={<Volunteer />} />
-              </Routes>
+              <Route path="/intermediateUser" element={<IntermediateProfile/>}/>
+            </Routes>
         </Box>
       </Box>
     </BrowserRouter>

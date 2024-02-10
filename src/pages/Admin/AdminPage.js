@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
 
-import { Avatar, Container, Paper, Typography, Box, Tab, Tabs, Divider, Grid } from '@mui/material';
+import { Avatar, Container, Paper, Typography, Box, Tab, Tabs, Divider, Grid, Card } from '@mui/material';
 import PortraitIcon from '@mui/icons-material/Portrait';
 import InsertChartIcon from '@mui/icons-material/InsertChart';
 import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
 
 import RowComponent from './RowComponent/RowComponent';
 import adminPhoto from '../../images/adminProfilePhoto.jpg'
+import report1 from '../../images/surveyAverageScore.png';
+import report2 from '../../images/surveyTable.png';
+import report3 from '../../images/pieChart.png'
 
 
 export default function AdminPage() {
@@ -65,9 +68,20 @@ export default function AdminPage() {
                 ) }
               </Grid> 
               : 
-              <Typography variant="h4" component="h5" style={{height: '120px', padding: '20px', margin: '50px'}}>
-                <AutoAwesomeIcon/> Incoming Feature!
-              </Typography>
+              <>
+                <Typography variant="h4" component="h5" style={{height: '40px', padding: '20px', marginTop: '10px'}}>
+                  Bar Chart from Question 1 to 4
+                </Typography>
+                <img src={report1} alt="report1" style={{ width: 'auto', height: '500px', margin:'0px 20px', borderRadius:'5px' }} />
+                <Typography variant="h4" component="h5" style={{height: '40px', padding: '20px', marginTop: '10px'}}>
+                  Table from Question 1 to 4
+                </Typography>
+                <img src={report2} alt="report2" style={{ width: 'auto', height: '500px', margin:'0px 20px', borderRadius:'5px' }} />
+                <Typography variant="h4" component="h5" style={{height: '40px', padding: '20px', marginTop: '10px'}}>
+                  Pie Chart from Question 5
+                </Typography>
+                <img src={report3} alt="report3" style={{ width: 'auto', height: '500px', margin:'0px 20px 40px', borderRadius:'5px' }} />
+              </>
             }
           </Box>
     </Container>
