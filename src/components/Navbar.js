@@ -20,7 +20,7 @@ export default function Navbar() {
         <Toolbar>
           <img style={{width: 90, height: 90, marginRight: '15px', borderRadius: '10px'}} src={logo} alt="GUI Logo"/>
           <Typography variant="h4" noWrap component="div">
-            Volunteers in GUI
+            Kampung Keepers
           </Typography>
           
             <Button variant="contained" style={{marginLeft: 'auto', backgroundColor: '#2d384f' }}>
