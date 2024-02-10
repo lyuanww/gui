@@ -12,7 +12,8 @@ import levelOneFarm from "../images/level1farm.png";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import PropTypes from "prop-types";
-import Survey from "../components/Survey";
+import SurveyFixed from "../components/SurveyFixed";
+import SurveyFixedAfter from "../components/SurveyFixedAfter";
 import Journal from "../components/Journal";
 
 function CustomTabPanel(props) {
@@ -231,10 +232,10 @@ export default function Profile() {
           <Journal/>
         </CustomTabPanel>
         <CustomTabPanel value={value} index={1}>
-          <Survey/>
+          <SurveyFixed/>
         </CustomTabPanel>
         <CustomTabPanel value={value} index={2}>
-          <Survey/>
+          <SurveyFixedAfter/>
         </CustomTabPanel>
       </Card>
     </Box>
