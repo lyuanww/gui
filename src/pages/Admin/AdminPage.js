@@ -21,11 +21,11 @@ export default function AdminPage() {
   };
 
   const usersList = [
-    {userId: 1, userName: "Newbie User", isNewbie: true}, 
-    {userId: 2, userName: "Intermediate User", isNewbie: false},
-    {userId: 3, userName: "Allice Chong", isNewbie: true}, 
-    {userId: 4, userName: "Ben Willson", isNewbie: true}, 
-    {userId: 5, userName: "Carla Watson", isNewbie: true}, 
+    {userId: 1, userName: "Newbie User", isNewbie: true, isIntermediate: false}, 
+    {userId: 2, userName: "Intermediate User", isNewbie: false, isIntermediate: true},
+    {userId: 3, userName: "Allice Chong", isNewbie: false, isIntermediate: false}, 
+    {userId: 4, userName: "Ben Willson", isNewbie: false, isIntermediate: false}, 
+    {userId: 5, userName: "Carla Watson", isNewbie: false, isIntermediate: false}, 
   ]
 
   return (
@@ -63,7 +63,7 @@ export default function AdminPage() {
               <Grid container alignItems="stretch" spacing={2} padding={4}>
                 { usersList?.map((user) => 
                     <Grid key={user.userId} item xs={12}>
-                        <RowComponent name={user.userName} isNewbie={user.isNewbie}/>
+                        <RowComponent name={user.userName} isNewbie={user.isNewbie} isIntermediate={user.isIntermediate}/>
                     </Grid>
                 ) }
               </Grid> 
