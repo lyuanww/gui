@@ -20,7 +20,7 @@ Share your environmental adventures with fellow volunteers in our dedicated foru
 
 ## How to Use 🛠️
 
-1. **Clone the Repository:**s
+1. **Clone the Repository:**
    ```bash
    git clone https://github.com/KampungKeepers
    ```
