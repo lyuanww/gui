@@ -1,6 +1,7 @@
 import React from "react";
 
 import Typography from '@mui/material/Typography'
+import Box from '@mui/material/Box';
 
 import VolunteerOpps from "./VolunteerOpps";
 
@@ -16,6 +17,11 @@ export default function Volunteer() {
         <Typography variant="h4" sx={{textAlign:"center", mb:2}}>
           Volunteering Opportunities
         </Typography>
+        <Box sx={{ border: 'solid', padding: '10px', backgroundColor: '#e2e8e1' }}>
+            <Typography variant="h6" sx={{ textAlign: 'center' }}>
+            Click the + icon to claim your badge after your volunteering session!
+            </Typography>
+        </Box>
       </div>
       <div style={{  display: 'flex', flex: 'row', alignItems: 'center', padding: 10, flexWrap: 'wrap'}}>
       {volunteeringOpps.map((volunteeringOpps) => (
