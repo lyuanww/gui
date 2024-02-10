@@ -12,6 +12,7 @@ import Tooltip, { tooltipClasses } from "@mui/material/Tooltip";
 import styled from "@mui/material/styles/styled";
 import Box from "@mui/material/Box";
 import levelOneFarm from "../images/level1farm.png";
+import IntermediateFarm from "../images/IntermediateFarm.jpg"
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import PropTypes from "prop-types";
@@ -138,7 +139,7 @@ export default function IntermediateProfile() {
               </Card>
               <Card sx={{ p: 4, border:"solid", backgroundColor:"#e4ebed" }}>
                 <Typography variant="h4" sx={{textAlign:"center", mb:2}}>Your Farm</Typography>
-                <CardMedia component="img" height="300" image={levelOneFarm} />
+                <CardMedia component="img" height="300" image={IntermediateFarm} />
               </Card>
             </Stack>
           </Grid>
