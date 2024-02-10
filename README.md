@@ -20,6 +20,11 @@ Share your environmental adventures with fellow volunteers in our dedicated foru
 
 ## How to Use 🛠️
 
+To open the application, simply click [here](https://kampungkeepers.vercel.app/). This will direct you straight to the Profile page. To go to the Volunteering page, click on the tab "Volunteer Programme" and to view the forum, click on the tab "Forum". 
+To view the admin page, click [here](https://kampungkeepers.vercel.app/adminPage)
+
+#### If you would like to have a local copy of the code: 
+
 1. **Clone the Repository:**
 
 2. **Install Dependencies:**
