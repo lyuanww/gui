@@ -1,70 +1,42 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Kampung Keepers 🌱
 
-## Available Scripts
+Welcome to Kampung Keepers, an innovative and gamified application designed to track and celebrate the progress of Ground Up Initiative's (GUI) volunteers. At the heart of our mission is the belief that every volunteer's contribution, no matter how small, plays a crucial role in fostering sustainable communities. Kampung Keepers provides a platform for volunteers to actively engage, share experiences, and be recognized for their dedication.
 
-In the project directory, you can run:
+## Features 🚀
 
-### `npm start`
+### Volunteer Progress Tracker
+Embark on a rewarding journey as you level up and collect badges! The progress tracker not only serves as a visual representation of your achievements but also encourages continuous participation. Whether you're a seasoned volunteer or just starting, there's always an opportunity to earn badges and reach new levels.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Admin Dashboard
+For administrators, the application comes with a dedicated Admin Dashboard. Admins can use this feature to track the overall progress of volunteers, monitor survey responses, and gain insights into the collective impact of the community. The Admin Dashboard serves as a powerful tool for managing and optimizing the volunteering experience.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Volunteer Survey
+Your insights matter! Participate in interactive surveys designed to gather valuable information that helps GUI analyze the depth of our collective impact. Your responses contribute to shaping future initiatives and enhancing the overall volunteer experience.
 
-### `npm test`
+### Environment Adventures Forum
+Share your environmental adventures with fellow volunteers in our dedicated forum. Whether it's planting trees, organizing clean-up drives, or exploring sustainable practices, the forum is a space to celebrate successes, exchange ideas, and inspire others.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## How to Use 🛠️
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the Repository:**s
+   ```bash
+   git clone https://github.com/KampungKeepers
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Install Dependencies:**
+   ```bash
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Start the Application:**
+   ```bash
+   npm start
+   ```
 
-### `npm run eject`
+Once the application is up and running, log in with your GUI volunteer credentials to begin your journey. Explore the features, track your progress, participate in surveys, and contribute to the community's growth.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Contributing 🤝
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+We value your input! Kampung Keepers is an open-source project, and we welcome contributions from the community. Whether you want to report a bug, suggest new features, or submit code improvements, your involvement makes a difference.
