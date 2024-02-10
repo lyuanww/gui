@@ -15,15 +15,12 @@ For administrators, the application comes with a dedicated Admin Dashboard. Admi
 Your insights matter! Participate in interactive surveys designed to gather valuable information that helps GUI analyze the depth of our collective impact. Your responses contribute to shaping future initiatives and enhancing the overall volunteer experience.
 
 ### Environment Adventures Forum
-Share your environmental adventures with fellow volunteers in our dedicated forum. Whether it's planting trees, organizing clean-up drives, or exploring sustainable practices, the forum is a space to celebrate successes, exchange ideas, and inspire others.
+Share your environmental adventures with fellow volunteers in our dedicated forum. Whether it's growing new plants, crafting woodwork, or exploring sustainable practices, the forum is a space to celebrate successes, exchange ideas, and inspire others.
 
 
 ## How to Use 🛠️
 
 1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/KampungKeepers
-   ```
 
 2. **Install Dependencies:**
    ```bash
