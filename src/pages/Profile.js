@@ -216,7 +216,7 @@ export default function Profile() {
           </Card>
         </Grid>
       </Grid>
-      <Card sx={{ m:5,border:"solid", backgroundColor:"#e4ebed" }}>
+      <Card sx={{ m:4,border:"solid", backgroundColor:"#e4ebed" }}>
         <Box sx={{ m:5, borderBottom: 1, borderColor: "divider" }}>
           <Tabs
             value={value}
