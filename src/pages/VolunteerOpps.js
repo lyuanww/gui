@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 
 import Box from '@mui/material/Box';
-import { Button, Modal } from '@mui/material';
+import { Button, ButtonGroup, Modal, Typography, TextField } from '@mui/material';
+import AddIcon from '@mui/icons-material/AddCircle'
 import Survey from '../components/Survey'
 
 const VolunteerOpps = ({ name, imageUrl }) => {
@@ -9,6 +10,9 @@ const VolunteerOpps = ({ name, imageUrl }) => {
     const toggleModal = () => {
       setShowSurveyModal(!showSurveyModal);
     };
+    const [showEnterPasscode, setShowEnterPasscode] = useState(false);
+    const [count, setCount] = useState(0);
+
     return(
         <Box
           sx={{
@@ -20,7 +24,8 @@ const VolunteerOpps = ({ name, imageUrl }) => {
             borderRadius: '12px',
             boxShadow: 1,
             fontWeight: 'bold',
-            backgroundColor: '#e4ebed'
+            backgroundColor: '#e4ebed',
+            padding: '10px'
           }} 
           width={500}
           margin={5}
@@ -51,7 +56,7 @@ const VolunteerOpps = ({ name, imageUrl }) => {
             <Box sx={{mt:1.5}}>
               <Button
                 onClick={() => {toggleModal()}} 
-                style={{backgroundColor: "#5f857a",}}
+                style={{backgroundColor: "#5f857a", marginLeft: 'auto',}}
                 variant="contained"
               >Sign up</Button>
                 <Modal open={showSurveyModal} style={{display: "flex", justifyContent: "center", overflow: 'scroll'}}>
@@ -65,6 +70,28 @@ const VolunteerOpps = ({ name, imageUrl }) => {
                     </Box>
                 </Modal>
             </Box>
+            <Typography style={{marginTop: '10px'}}>
+              Number of participations
+            </Typography>
+            <Box style={{display: 'flex', alignItems: 'center'}}>
+              <Typography style={{backgroundColor: '#f5faf6', width:'150px', padding:'5px'}}>
+                {count}
+              </Typography>
+              <Button onClick = {() => setShowEnterPasscode(true)} sx={{ color: '#5f857a' }}>
+                <AddIcon/>
+              </Button>
+            </Box>
+              <Modal open={showEnterPasscode} style={{display: 'flex', alignItems: 'center', justifyContent: 'center',}}>
+                <Box sx={{ p: 4, border:"solid", backgroundColor:"#e4ebed", alignItems: 'center'}}>
+                  <Typography style={{marginTop: '10px'}}>
+                      Please Enter Passcode:
+                  </Typography>
+                  <TextField id="filled-basic" label="Passcode" variant="filled" />
+                  <Button onClick = {() => {setShowEnterPasscode(false); setCount(count+1)}} sx={{ color: '#5f857a' }}>
+                    Submit
+                  </Button>
+                </Box>
+              </Modal>
         </Box>
         </Box>
     );
