@@ -6,22 +6,30 @@ Welcome to Kampung Keepers, an innovative and gamified application designed to t
 ## Features 🚀
 
 ### Volunteer Progress Tracker
-Embark on a rewarding journey as you level up and collect badges! The progress tracker not only serves as a visual representation of your achievements but also encourages continuous participation. Whether you're a seasoned volunteer or just starting, there's always an opportunity to earn badges and reach new levels.
+Embark on a rewarding journey as you level up and collect badges! The progress tracker not only serves as a visual representation of your achievements but also encourages continuous participation. Whether you're a seasoned volunteer or just starting, there's always an opportunity to earn badges and reach new levels. 
+
+The badges will appear under the Profile section, where you will be able to view the details of the badges as well! In addition, another aspect of the progress tracker is the farm! As a newbie, your farm will be largely empty. However, as you level up and attain more badges, your farm will be populated with more tree and animals! 
+
+You will also be able to pen down your thoughts and experiences in your very own environmental journal in the Profile section of the app. 
+
+### Volunteer Survey
+Your insights matter! Participate in interactive surveys designed to gather valuable information that helps GUI analyze the depth of our collective impact. Your responses contribute to shaping future initiatives and enhancing the overall volunteer experience. You will be guided to complete a survey before you go for your first volunteering session and right after you attend. The survey responses will be saved in your Profile along with your badges and farm!
+
+### Environment Adventures Forum
+Share your environmental adventures with fellow volunteers in our dedicated forum. Whether it's growing new plants, crafting woodwork, or exploring sustainable practices, the forum is a space to celebrate successes, exchange ideas, and inspire others.
 
 ### Admin Dashboard
 For administrators, the application comes with a dedicated Admin Dashboard. Admins can use this feature to track the overall progress of volunteers, monitor survey responses, and gain insights into the collective impact of the community. The Admin Dashboard serves as a powerful tool for managing and optimizing the volunteering experience.
 
-### Volunteer Survey
-Your insights matter! Participate in interactive surveys designed to gather valuable information that helps GUI analyze the depth of our collective impact. Your responses contribute to shaping future initiatives and enhancing the overall volunteer experience.
-
-### Environment Adventures Forum
-Share your environmental adventures with fellow volunteers in our dedicated forum. Whether it's growing new plants, crafting woodwork, or exploring sustainable practices, the forum is a space to celebrate successes, exchange ideas, and inspire others.
+A key feature of the admin dashboard is the ability to view the profiles of all existing users. This will allow the admin to view all the users' survey responses, badges and farms. In addition, the survey reports feature allows the administrator to have statistical reports on the transformation of volunteers before and after their first session volunteering. The administrator can also view the forum as well as users' environmental journal to glean insights from volunteers' thoughts and experiences.
 
 
 ## How to Use 🛠️
 
 To open the application, simply click [here](https://kampungkeepers.vercel.app/). This will direct you straight to the Profile page. To go to the Volunteering page, click on the tab "Volunteer Programme" and to view the forum, click on the tab "Forum". 
 To view the admin page, click [here](https://kampungkeepers.vercel.app/adminPage)
+
+If you are new here, do not fear! Click [here](https://youtu.be/IQd0eFmLJWo) for a video demo of the application!
 
 #### If you would like to have a local copy of the code: 
 
