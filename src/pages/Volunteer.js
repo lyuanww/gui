@@ -13,8 +13,8 @@ export default function Volunteer() {
   return (
     <div style={{width: 'fit content', paddingTop: 10}}>
       <div>    
-        <Typography variant="h5" sx={{textAlign:"center", mb:2}}>
-        Volunteering Opportunities
+        <Typography variant="h4" sx={{textAlign:"center", mb:2}}>
+          Volunteering Opportunities
         </Typography>
       </div>
       <div style={{  display: 'flex', flex: 'row', alignItems: 'center', padding: 10, flexWrap: 'wrap'}}>

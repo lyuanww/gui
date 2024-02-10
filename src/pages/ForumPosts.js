@@ -5,7 +5,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 
 
-const ForumPosts = ({ author, date, content, avatarUrl, imageUrl }) => {
+const ForumPosts = ({ author, date, content, avatarUrl, imageUrl, image }) => {
     const [isLiked, setLiked] = useState(false);
     const [likes, setLikes] = useState(0);
   
@@ -35,7 +35,7 @@ const handleLike = () => {
           </Typography>
         </div>
       </div>
-      <img src={logo} alt="GUI Logo" style={{ width: '100%', height: 'auto' }} />
+      <img src={image} alt="postImage" style={{ width: '100%', height: 'auto' }} />
     </div>
 
 
@@ -50,7 +50,7 @@ const handleLike = () => {
         <Typography variant="body1" style={{ marginTop: 8, maxWidth: 300 }}>
           {content}
         </Typography>
-        <div style={{alignItems: 'center', marginTop: 8}}>
+        <div style={{alignItems: 'center', marginTop: 8, marginLeft: 'auto'}}>
           <IconButton onClick={handleLike} color="primary">
              {isLiked ? <FavoriteIcon /> : <FavoriteBorderIcon />}
           </IconButton>

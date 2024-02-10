@@ -68,6 +68,9 @@ export default function Profile() {
 
   return (
     <Box sx={{flexDirection:"column", pb: 2}}>
+      <Typography variant="h4" sx={{textAlign:"center", mb:2}}>
+          Profile
+      </Typography>
       <Grid
         container
         spacing={2}
