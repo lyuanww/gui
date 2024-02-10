@@ -57,15 +57,12 @@ export default function SurveyFixed() {
             5. Please tick the activities you regularly partake in on your own.
             </Typography>
             <FormGroup gutterBottom>
-                <FormControlLabel control={<Checkbox />} label="Woodworking" />
-                <FormControlLabel control={<Checkbox />} label="Gardening/Growing own vegetables" />
-                <FormControlLabel control={<Checkbox />} label="Upcycling used clothes" />
-                <FormControlLabel control={<Checkbox />} label="Other green activities (share with us in the forum!)" />
+                <FormControlLabel control={<Checkbox disabled />} label="Woodworking" />
+                <FormControlLabel control={<Checkbox disabled />} label="Gardening/Growing own vegetables" />
+                <FormControlLabel control={<Checkbox disabled />} label="Upcycling used clothes" />
+                <FormControlLabel control={<Checkbox disabled />} label="Other green activities (share with us in the forum!)" />
             </FormGroup>
             </div>
-            <Typography variant="h5">
-                Thank you for filling up our survey! Click submit to continue signing up and volunteer with us!
-            </Typography>
         </Box>
     )
     }

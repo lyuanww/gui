@@ -1,17 +1,22 @@
 import React, { useState } from "react";
 
 import Box from '@mui/material/Box';
-import { Button, ButtonGroup, Modal, Typography, TextField } from '@mui/material';
-import AddIcon from '@mui/icons-material/AddCircle'
-import Survey from '../components/Survey'
+import { Button, Modal, Typography, TextField } from '@mui/material';
+import AddIcon from '@mui/icons-material/AddCircle';
+import Survey from '../components/Survey';
+import SurveyAfter from '../components/SurveyAfter';
 
 const VolunteerOpps = ({ name, imageUrl }) => {
     const [showSurveyModal, setShowSurveyModal] = useState(false);
-    const toggleModal = () => {
-      setShowSurveyModal(!showSurveyModal);
-    };
     const [showEnterPasscode, setShowEnterPasscode] = useState(false);
     const [count, setCount] = useState(0);
+    const [showAfterSurvey, setShowAfterSurvey] = useState(false);
+    const handleAfterSurvey = (count) => {
+      setCount(count+1)
+      if (count===0) {
+        setShowAfterSurvey(true);
+      }
+    }
 
     return(
         <Box
@@ -25,10 +30,11 @@ const VolunteerOpps = ({ name, imageUrl }) => {
             boxShadow: 1,
             fontWeight: 'bold',
             backgroundColor: '#e4ebed',
-            padding: '10px'
+            padding: '10px',
+            height: '225px'
           }} 
           width={500}
-          margin={5}
+          margin={3}
         >
           <Box
             component="img"
@@ -55,14 +61,14 @@ const VolunteerOpps = ({ name, imageUrl }) => {
             </Box>
             <Box sx={{mt:1.5}}>
               <Button
-                onClick={() => {toggleModal()}} 
+                onClick={() => {setShowSurveyModal(true)}} 
                 style={{backgroundColor: "#5f857a", marginLeft: 'auto',}}
                 variant="contained"
               >Sign up</Button>
                 <Modal open={showSurveyModal} style={{display: "flex", justifyContent: "center", overflow: 'scroll'}}>
                     <Box sx={{ p: 4, border:"solid", backgroundColor:"#e4ebed", alignItems: 'center', overflow: 'scroll'}}>
                         <Survey />
-                        <Button onClick={() => {toggleModal()}} 
+                        <Button onClick={() => {setShowSurveyModal(false)}} 
                         style={{backgroundColor: "#5f857a", marginLeft: 'auto', float: 'right'}}
                         variant="contained">
                         Submit
@@ -87,11 +93,21 @@ const VolunteerOpps = ({ name, imageUrl }) => {
                       Please Enter Passcode:
                   </Typography>
                   <TextField id="filled-basic" label="Passcode" variant="filled" />
-                  <Button onClick = {() => {setShowEnterPasscode(false); setCount(count+1)}} sx={{ color: '#5f857a' }}>
+                  <Button onClick = {() => {setShowEnterPasscode(false); handleAfterSurvey(count)}} sx={{ color: '#5f857a' }}>
                     Submit
                   </Button>
                 </Box>
               </Modal>
+              <Modal open={showAfterSurvey} style={{display: "flex", justifyContent: "center", overflow: 'scroll'}}>
+                    <Box sx={{ p: 4, border:"solid", backgroundColor:"#e4ebed", alignItems: 'center', overflow: 'scroll'}}>
+                        <SurveyAfter />
+                        <Button onClick={() => {setShowAfterSurvey(false)}} 
+                        style={{backgroundColor: "#5f857a", marginLeft: 'auto', float: 'right'}}
+                        variant="contained">
+                        Submit
+                        </Button>
+                    </Box>
+                </Modal>
         </Box>
         </Box>
     );
